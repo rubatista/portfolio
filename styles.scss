@@ -29,7 +29,7 @@ header{
         font-size: 1.3rem;
         font-weight: 600;
         text-wrap: nowrap;
-        transition: 0.4s ease-in-out;
+        transition: 0.2s ease-in-out;
         padding-left: 0.5rem;
 
         &:hover{
@@ -91,54 +91,90 @@ header{
 
 section{
     min-height: 100vh;
-    height: 100vh;
     padding: 8rem 12%;
     width: 100%;
     position: relative;
 
-    .about{
+    &.about{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
 
-    .about-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8rem;
-        height: 95%;
-    }
+        .about-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
 
-    .profile-img{
-        width: 19vw;
-        border-radius: 50%;
-    }
-    
-    .info-box{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
+            .profile-img{
+                width: 19vw;
+                border-radius: 50%;
+                border: 5px solid black;
+            }
 
-        h3{
-            font-size: 1.8rem;
-            font-weight: 500;
-            opacity: 0.8;
-        }
+            .info-box{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
 
-        h1{
-            font-size: 4rem;
-            font-weight: 600;
-        }
+                .text{
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        opacity: 0.8;
+                    }
+            
+                    h1{
+                        font-size: 4rem;
+                        font-weight: 600;
+                    }
+            
+                    span{
+                        background: linear-gradient(to right, rgb(255,0, 255), rgb(0,157,255));
+                        background-clip: text;
+                        color: transparent;
+                        font-size: 2rem;
+                    }
+                }
+                
+                .btn-group{
+                    display: flex;
+                    gap: 1rem;
 
-        span{
-            background: linear-gradient(to right, rgb(255,0, 255), rgb(0,157,255));
-            background-clip: text;
-            color: transparent;
-            font-size: 2rem;
+                    .btn{
+                        border-radius: 3rem;
+                        padding: 0.5rem 1.5rem;
+                        border: 2px solid black;
+                        cursor: pointer;
+                        font-weight: 500;
+                        text-wrap: nowrap;
+                        transition: 0.2s ease-in-out;
+
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+
+                .socials{
+                    display: flex;
+                    gap: 2rem;
+                    
+                    i{
+                        font-size: 2.5rem;
+                        cursor: pointer;
+                        transition: 0.2s ease-in-out;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
         }
     }
 }
