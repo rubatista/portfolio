@@ -88,3 +88,57 @@ header{
         display: none;
     }
 }
+
+section{
+    min-height: 100vh;
+    height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        height: 95%;
+    }
+
+    .profile-img{
+        width: 19vw;
+        border-radius: 50%;
+    }
+    
+    .info-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        h3{
+            font-size: 1.8rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        span{
+            background: linear-gradient(to right, rgb(255,0, 255), rgb(0,157,255));
+            background-clip: text;
+            color: transparent;
+            font-size: 2rem;
+        }
+    }
+}
