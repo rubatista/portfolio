@@ -29,7 +29,7 @@ header .logo {
   font-size: 1.3rem;
   font-weight: 600;
   text-wrap: nowrap;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
   padding-left: 0.5rem;
 }
 header .logo:hover {
@@ -78,6 +78,81 @@ header .visit-btn:hover {
 header #menu-icon {
   font-size: 2rem;
   display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+section.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.about .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+section.about .about-container .profile-img {
+  width: 19vw;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+section.about .about-container .info-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+section.about .about-container .info-box .text h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+section.about .about-container .info-box .text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.about .about-container .info-box .text span {
+  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+section.about .about-container .info-box .btn-group {
+  display: flex;
+  gap: 1rem;
+}
+section.about .about-container .info-box .btn-group .btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+section.about .about-container .info-box .btn-group .btn:hover {
+  background-color: black;
+  color: white;
+}
+section.about .about-container .info-box .socials {
+  display: flex;
+  gap: 2rem;
+}
+section.about .about-container .info-box .socials i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+section.about .about-container .info-box .socials i:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
