@@ -177,4 +177,64 @@ section{
             }
         }
     }
+
+    &.experience{
+       
+
+        .section-title{
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+
+        .experience-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 2rem; 
+     
+                .grid-card{
+                 border: 2px solid black;
+                 border-radius: 3rem;
+                 padding: 3rem;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: baseline;
+                 justify-content: left;
+                 cursor: pointer;
+                 transition: 0.2s ease-in-out;
+     
+                     &:hover{
+                         transform: scale(1.02);
+                         background-color: black;
+                         color: white;
+                     }
+     
+                     i{
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem; 
+                     }
+     
+                     span{
+                         font-size: 1.5rem;
+                         font-weight: 500;
+                         background: linear-gradient(to right, rgb(255,0, 255), rgb(0,157,255));
+                         background-clip: text;
+                         color: transparent;
+                     }
+                }
+             }
+
+             img{
+                width: 24vw;
+                border-radius: 3rem;
+            }
+        }
+    }
 }
