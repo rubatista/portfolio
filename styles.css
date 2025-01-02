@@ -86,6 +86,23 @@ section {
   width: 100%;
   position: relative;
 }
+section .btn-group {
+  display: flex;
+  gap: 1rem;
+}
+section .btn-group .btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+section .btn-group .btn:hover {
+  background-color: black;
+  color: white;
+}
 section.about {
   display: flex;
   align-items: center;
@@ -201,6 +218,126 @@ section.experience .experience-info .grid .grid-card span {
 section.experience .experience-info img {
   width: 24vw;
   border-radius: 3rem;
+}
+section.projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+section.projects .projects-grid .project-card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+section.projects .projects-grid .project-card:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-10px) scale(1.02);
+}
+section.projects .projects-grid .project-card:hover .btn {
+  border: 2px solid white;
+  color: white;
+}
+section.projects .projects-grid .project-card:hover .btn:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+section.projects .projects-grid .project-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+section.projects .projects-grid .project-card img {
+  width: 17vw;
+  border-radius: 1rem;
+}
+section.contact .input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+section.contact .input-box .input {
+  position: relative;
+}
+section.contact .input-box .input input {
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 2rem 8rem;
+  font-size: 3rem;
+}
+section.contact .input-box .input input::placeholder {
+  font-size: 3rem;
+}
+section.contact .input-box .input i {
+  position: absolute;
+  font-size: 4rem;
+  top: 50%;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+section.contact .input-box .btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+section.contact .input-box .btn:hover {
+  background-color: black;
+  color: white;
+}
+section footer {
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+section footer ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+section footer ul li a {
+  position: relative;
+  color: black;
+  font-weight: 600;
+}
+section footer ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+section footer ul li a:hover::before {
+  width: 100%;
+}
+section footer .copyright {
+  font-size: 300;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
